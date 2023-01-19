@@ -57,5 +57,5 @@ app.post("/create-payment-intent", async (req, res) => {
   });
 });
 
-const PORT = "https://ecomm-store-with-stripe.onrender.com/checkout";
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Node server listening on port ${PORT}`));
